@@ -1,0 +1,13 @@
+sudo ntfsfix /dev/sdXY
+
+
+
+Delete a locked Folder
+Step 1: open terminal. ...
+  Step 2: Give command : sudo su.
+  Step 3: Above command would ask for your password. ...
+  Step 4: Once the correct password is given, you would give following command.
+  Step 5: chmod a+rwx folder/file 
+   and go to home and Just delete the folder/file
+
+  Step 6: exit for root user type "exit".

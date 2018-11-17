@@ -1,0 +1,2 @@
+wifi lists : nmcli d wifi list
+to connect on wifi : nmcli c up Philosopher
