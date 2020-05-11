@@ -1,0 +1,20 @@
+Get device's current connection
+
+nmcli -t -f GENERAL.CONNECTION --mode tabular device show $DEVICE | head -n1
+
+-t is required as there is a space appended at the end otherwise (!?).
+
+Show current metered status
+
+nmcli -f connection.metered connection show $CONNECTION
+
+Where $CONNECTION is the string returned by the previous command.
+
+Change metered status
+
+The valid statuses are yes, no, and unknown. unknown is the default, which will do the guessing based on things like DHCP option ANDROID_METERED (reference).
+
+Example: set $CONNECTION to be metered:
+
+nmcli connection modify $CONNECTION connection.metered yes
+
